@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .prose-editor {
+    @apply focus:outline-none;
+  }
+  
+  .prose-editor .ProseMirror {
+    @apply text-white bg-transparent outline-none min-h-[250px] text-lg leading-relaxed;
+  }
+  
+  .prose-editor .ProseMirror p {
+    @apply mb-4 last:mb-0 text-white;
+  }
+  
+  .prose-editor .ProseMirror strong {
+    @apply font-semibold text-white;
+  }
+  
+  .prose-editor .ProseMirror em {
+    @apply italic text-gray-200;
+  }
+
+  .prose-editor .ProseMirror:focus {
+    @apply outline-none;
+  }
+
+  .prose-editor .ProseMirror::placeholder {
+    @apply text-gray-400;
+  }
+}
+
+@layer utilities {
+  .spinner {
+    @apply animate-spin rounded-full h-4 w-4 border-b-2 border-white;
+  }
+}
