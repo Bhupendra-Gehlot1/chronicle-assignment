@@ -15,7 +15,7 @@ A modern, AI-powered writing companion that helps you continue your creative tho
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Bhupendra-Gehlot1/chronicle-assignment.git
-   cd assignment
+   cd chronicle-assignment
    ```
 
 2. **Install dependencies**
